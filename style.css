@@ -1,0 +1,68 @@
+
+*
+{
+    margin: 0;
+}
+
+body
+{
+    
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    position: fixed ;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+#accueil
+{
+    display: flex;
+    align-items: center;
+    height: 600px;
+    color: white;
+    background-image: url(webagency_images/images/slider/bg1.jpg);
+    background-position-y: 100px;
+}
+
+.clrblue
+{
+    color: #3491B2;
+}
+.bgblue
+{
+    background: #3491B2;
+}
+
+.titre
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#portfolio img
+{
+    width: 250px;
+    margin: 10px;
+}
