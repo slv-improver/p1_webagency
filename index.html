@@ -1,90 +1,146 @@
+
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-	    <link rel="stylesheet" href="style.css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" href="style.css" />  <!-- mobile -->
+	    <!-- <link rel="stylesheet" href=".css" />  tablette
+	    <link rel="stylesheet" href=".css" />  desktop -->
         <title>WebAgency</title>
     </head>
     <body>
         <header>
             <img src="webagency_images/images/logo.png" alt="logo" id="logo"/>
             <nav>
-                <a href="#accueil">Accueil</a>
-                <a href="#services">Services</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </nav>
         </header>
 
         <section id="accueil">
+            <img src="webagency_images/images/slider/bg1.jpg" alt="slider">
             <div id="intro">
-                <h1><span class="clrblue">WEBAGENCY</span> : L'AGENCE DE TOUS<br /> VOS PROJETS !</h1>
+                <h2><span class="clrblue">WEBAGENCY</span> : L'AGENCE DE TOUS VOS PROJETS !</h2>
                 <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
-                <a href="" class="bgblue">Plus d'infos</a>
+                <button type="button" class="bgblue">Plus d'infos</button>
             </div>
         </section>
         
         <section id="services">
-            <div class="titre">
-                <h1>NOS SERVICES</h1>
-                <p>lorem ipsum</p>
+            <div class="header">
+                <h2>NOS SERVICES</h2>
+                <p>Nous concevons votre site</p>
             </div>
             <div class="flex">
                 <img src="webagency_images/images/main-feature.png" alt="ordinateur">
                 <div>
-                    <p>UX design<br/>
-                    lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-                    lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-                    <p>UI design<br/>
-                    lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-                    lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-                    <p>SEO<br/>
-                    lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-                    lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+
+                    <ul>
+                        <li>
+                            <h3>UX design</h3>
+                            <p>
+                                Éxigez la meilleur expérience pour vos visiteurs.<br>
+                                L'habille coopération entre technologie, stratégie et design.<br>
+                                Nous étudions, avec vous, vos utilisateurs type et leur profil afin de faire correspondre les fonctionnalités et leurs besoins.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>UI design</h3>
+                            <p>
+                                une interface agréable et élégante.<br>
+                                Imagination et créativité sont au coeur de cet art.<br>
+                                Nous vous conseillons pour créer une identité visuelle et un aspect esthétique à votre site par le biais des couleurs et de la typographie.<br>
+                            </p>
+                        </li>
+                        <li>
+                            <h3>SEO</h3>
+                            <p>
+                                À la frontière entre psychologie humaine et algorithmique informatique.<br>
+                                Nous optimisons le référencement de votre site pour répondre aux complexités des moteurs de recherche.
+                            </p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
-        
+
         <section id="portfolio">
-            <div class="titre">
-                <h1>NOS PROJETS</h1>
-                <p>lorem ipsum</p>
+            <div class="header">
+                <h2>NOS PROJETS</h2>
+                <p>
+                    Du site associatif à la multi-nationnale en passant par le e-commerce et les start-up, tous vos projets trouveront une place parmis nous.
+                </p>
                 <nav>
-                    <a href="">All Works</a>
-                    <a href="">Creative</a>
-                    <a href="">Corporate</a>
-                    <a href="">Portfolio</a>
+                    <ul>
+                        <li><a href="">All Works</a></li>
+                        <li><a href="">Creative</a></li>
+                        <li><a href="">Corporate</a></li>
+                        <li><a href="">Portfolio</a></li>
+                    </ul>
                 </nav>
             </div>
             <div>
-                <img src="webagency_images/images/portfolio/01.jpg" alt="réalisation">
-                <img src="webagency_images/images/portfolio/02.jpg" alt="réalisation">
-                <img src="webagency_images/images/portfolio/03.jpg" alt="réalisation">
-                <img src="webagency_images/images/portfolio/04.jpg" alt="réalisation">
-                <img src="webagency_images/images/portfolio/05.jpg" alt="réalisation">
-                <img src="webagency_images/images/portfolio/06.jpg" alt="réalisation">
-                <img src="webagency_images/images/portfolio/07.jpg" alt="réalisation">
-                <img src="webagency_images/images/portfolio/08.jpg" alt="réalisation">
+                <figure>
+                    <img src="webagency_images/images/portfolio/01.jpg" alt="réalisation">
+                    <figcaption></figcaption>
+                </figure>
+                <figure>
+                    <img src="webagency_images/images/portfolio/a_pink_rabbit.jpg" alt="réalisation">
+                    <figcaption></figcaption>
+                </figure>
+                <figure>
+                    <img src="webagency_images/images/portfolio/original_pompadour.jpg" alt="réalisation">
+                    <figcaption></figcaption>
+                </figure>
+                <figure>
+                    <img src="webagency_images/images/portfolio/04.jpg" alt="réalisation">
+                    <figcaption></figcaption>
+                </figure>
+                <figure>
+                    <img src="webagency_images/images/portfolio/shop_bag.jpg" alt="réalisation">
+                    <figcaption></figcaption>
+                </figure>
+                <figure>
+                    <img src="webagency_images/images/portfolio/06.jpg" alt="réalisation">
+                    <figcaption></figcaption>
+                </figure>
+                <figure>
+                    <img src="webagency_images/images/portfolio/arrow.jpg" alt="réalisation">
+                    <figcaption></figcaption>
+                </figure>
+                <figure>
+                    <img src="webagency_images/images/portfolio/be_theme.jpg" alt="réalisation">
+                    <figcaption></figcaption>
+                </figure>
+                <figure>
+                    <img src="webagency_images/images/portfolio/food.jpg" alt="réalisation">
+                    <figcaption></figcaption>
+                </figure>
             </div>
         </section>
         
         <section id="contact">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24898.182248974583!2d4.858708704067387!3d52.36366156893179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609e05731ba7d%3A0x7f5bd17b1343f849!2sJacob%20van%20Lennepstraat%20101-81%2C%201053%20MR%20Amsterdam%2C%20Netherlands!5e0!3m2!1sen!2sma!4v1569968414245!5m2!1sen!2sma" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>            <div id="formulaire">
-                <h1>Contact Info</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2216096949483!2d2.3476369155720245!3d48.873051779288936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25%20Rue%20d&#39;Hauteville%2C%2075010%20Paris!5e0!3m2!1sfr!2sfr!4v1570474821137!5m2!1sfr!2sfr"></iframe>
+            <div id="form">
+                <h2>Contact Info</h2>
                 <p>
-                    WebAgency SAS<br/>
-                    25 Rue d'Hauteville 75010 Paris<br/>
+                    WebAgency SAS
+                    25 Rue d'Hauteville, 75010 Paris
                     Tel : 01 02 03 04 05
                 </p>
                 <form>
-                    <input type="text" name="" placeholder="Name"><br/>
-                    <input type="email" name="" placeholder="Email"><br/>
-                    <input type="text" name="" placeholder="Subject"><br/>
-                    <textarea name="" id="" cols="25" rows="10" placeholder="Message"></textarea><br />
-                    <input type="submit" value="Send Message" class="bgblue">
+                    <input type="text" name="" placeholder="Name">
+                    <input type="email" name="" placeholder="Email">
+                    <input type="text" name="" placeholder="Subject">
+                    <textarea name="" id="" cols="25" rows="10" placeholder="Message"></textarea>
+                    <button type="submit" class="bgblue">Send Message</button>
                 </form>
             </div>
         </section>
-        
     </body>
 </html>
