@@ -1,0 +1,53 @@
+#intro {
+    top: 25%;
+}
+
+.flex ul {
+    margin: 30px 10% 0 0;
+    flex: 0.7;
+}
+#computer {
+    width: 35%;
+    max-width: inherit;
+}
+.flex {
+    display: flex;
+    flex-direction: inherit;
+}
+
+#nav-portfolio {
+    box-sizing: border-box;
+}
+#nav-portfolio li {
+    height: 100%; width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-list:hover {
+    border-top: 3px solid #5CADD3;
+}
+#nav-portfolio li:hover {
+    background: #5CADD3 content-box;
+    color: white;
+}
+
+figure {
+    width: 20%;
+    min-width: 240px;
+    max-width: inherit;
+}
+figcaption {
+    opacity: 0;
+}
+figcaption:hover {
+    opacity: 1;
+}
+
+figcaption {
+    height: 100%;
+}
+figcaption div {
+    position: absolute;
+    bottom: 0;
+}

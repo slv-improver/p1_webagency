@@ -1,0 +1,65 @@
+
+section {
+    padding-top: 60px;
+}
+header {
+    height: 60px;
+    padding: 0;
+}
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.4em;
+}
+.bgblue {
+    padding: 10px;
+}
+.header {
+    width: 55%;
+}
+
+#intro {
+    width: 45%;
+    max-width: 400px;
+    bottom: 15%;
+}
+
+figure {
+    min-width: 210px;
+    max-width: 235px;
+    width: 25%;
+}
+
+
+#contact {
+    position: relative;
+}
+iframe {
+    position: absolute;
+    top: 55px;
+    height: 600px;
+}
+#form {
+    position: absolute;
+    top: 80px;
+    right: 10%;
+    z-index: 20;
+    min-width: 300px;
+    max-width: 350px;
+    width: 25%;
+    max-width: 320px;
+    background: #ebf3f7e0;
+    text-align: left;
+}
+#form .header {
+    margin: 0;
+    width: 95%;
+    text-align: left;
+}
+#form h2 {
+    font-size: 1.6em;
+}
+input, textarea {
+    width: 95%;
+}

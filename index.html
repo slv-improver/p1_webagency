@@ -4,143 +4,188 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <link rel="stylesheet" href="style.css" />  <!-- mobile -->
-	    <!-- <link rel="stylesheet" href=".css" />  tablette
-	    <link rel="stylesheet" href=".css" />  desktop -->
+	    <link rel="stylesheet" media="all" href="mobile_reset.css" type="text/css" />
+	    <link rel="stylesheet" media="screen and (min-width: 480px)" href="mini_tab.css" type="text/css" />
+	    <link rel="stylesheet" media="screen and (min-width: 768px)" href="tab.css" type="text/css" />
+	    <link rel="stylesheet" media="screen and (min-width: 1024px)" href="desktop.css" type="text/css" />
+        <!-- <link rel="stylesheet" href="border.css" /> -->
         <title>WebAgency</title>
     </head>
     <body>
         <header>
             <img src="webagency_images/images/logo.png" alt="logo" id="logo"/>
             <nav>
-                <ul>
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul id="nav-menu">
+                    <li class="nav-list"><a href="#accueil">Accueil</a></li>
+                    <li class="nav-list"><a href="#services">Services</a></li>
+                    <li class="nav-list"><a href="#portfolio">Portfolio</a></li>
+                    <li class="nav-list"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
         <section id="accueil">
-            <img src="webagency_images/images/slider/bg1.jpg" alt="slider">
+            <img src="webagency_images/images/slider/bg1.jpg" alt="filette" id="slider">
             <div id="intro">
-                <h2><span class="clrblue">WEBAGENCY</span> : L'AGENCE DE TOUS VOS PROJETS !</h2>
+                <h1><span class="clrblue">WEBAGENCY</span> : L'AGENCE DE TOUS VOS PROJETS !</h1>
                 <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
-                <button type="button" class="bgblue">Plus d'infos</button>
+                <p><button type="button" class="bgblue">Plus d'infos</button></p>
             </div>
         </section>
         
         <section id="services">
             <div class="header">
-                <h2>NOS SERVICES</h2>
-                <p>Nous concevons votre site</p>
+                <h1>NOS SERVICES</h1>
+                <p>Votre entrepise souhaite s'implenter ou améliorer sa présence sur le web ? Nous concevons votre site de A à Z.</p>
             </div>
             <div class="flex">
-                <img src="webagency_images/images/main-feature.png" alt="ordinateur">
-                <div>
-
-                    <ul>
-                        <li>
-                            <h3>UX design</h3>
-                            <p>
-                                Éxigez la meilleur expérience pour vos visiteurs.<br>
-                                L'habille coopération entre technologie, stratégie et design.<br>
-                                Nous étudions, avec vous, vos utilisateurs type et leur profil afin de faire correspondre les fonctionnalités et leurs besoins.
-                            </p>
-                        </li>
-                        <li>
-                            <h3>UI design</h3>
-                            <p>
-                                une interface agréable et élégante.<br>
-                                Imagination et créativité sont au coeur de cet art.<br>
-                                Nous vous conseillons pour créer une identité visuelle et un aspect esthétique à votre site par le biais des couleurs et de la typographie.<br>
-                            </p>
-                        </li>
-                        <li>
-                            <h3>SEO</h3>
-                            <p>
-                                À la frontière entre psychologie humaine et algorithmique informatique.<br>
-                                Nous optimisons le référencement de votre site pour répondre aux complexités des moteurs de recherche.
-                            </p>
-                        </li>
-                    </ul>
-                </div>
+                <img src="webagency_images/images/main-feature.png" alt="ordinateur" id="computer">
+                <ul>
+                    <li>
+                        <h2>UX design</h2>
+                        <p>
+                            Éxigez la meilleur expérience pour vos visiteurs.
+                            L'habille coopération entre technologie, stratégie et design.
+                            Nous étudions, avec vous, vos utilisateurs type et leur profil afin de faire correspondre les fonctionnalités et leurs besoins.
+                        </p>
+                    </li>
+                    <li>
+                        <h2>UI design</h2>
+                        <p>
+                            Imagination et créativité sont au coeur de cet art.
+                            Nous vous conseillons pour créer une identité visuelle et un aspect esthétique à votre site par le biais des couleurs et de la typographie.
+                        </p>
+                    </li>
+                    <li>
+                        <h2>SEO</h2>
+                        <p>
+                            À la frontière entre psychologie humaine et algorithmique informatique.
+                            Nous optimisons le référencement de votre site pour répondre aux complexités des moteurs de recherche.
+                        </p>
+                    </li>
+                </ul>
             </div>
         </section>
 
         <section id="portfolio">
             <div class="header">
-                <h2>NOS PROJETS</h2>
+                <h1>NOS PROJETS</h1>
                 <p>
                     Du site associatif à la multi-nationnale en passant par le e-commerce et les start-up, tous vos projets trouveront une place parmis nous.
                 </p>
-                <nav>
-                    <ul>
-                        <li><a href="">All Works</a></li>
-                        <li><a href="">Creative</a></li>
-                        <li><a href="">Corporate</a></li>
-                        <li><a href="">Portfolio</a></li>
-                    </ul>
-                </nav>
             </div>
-            <div>
+            <nav>
+                <ul id="nav-portfolio">
+                    <li><a href="#portfolio">All Works</a></li>
+                    <li><a href="#portfolio">Creative</a></li>
+                    <li><a href="#portfolio">Corporate</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                </ul>
+            </nav>
+            <div id="real">
                 <figure>
-                    <img src="webagency_images/images/portfolio/01.jpg" alt="réalisation">
-                    <figcaption></figcaption>
+                    <img src="webagency_images/images/portfolio/on_the_noise.jpg" alt="On The Noise">
+                    <figcaption>
+                        <div>
+                            <b>On The Noise</b>
+                            <p>La meilleure référence pour les lunettes</p>
+                        </div>
+                    </figcaption>
                 </figure>
                 <figure>
-                    <img src="webagency_images/images/portfolio/a_pink_rabbit.jpg" alt="réalisation">
-                    <figcaption></figcaption>
+                    <img src="webagency_images/images/portfolio/pink_rabbit.jpg" alt="Pink Rabbit">
+                    <figcaption>
+                        <div>
+                            <b>Pink Rabbit</b>
+                            <p>Des cadeaux personnalisés en origamie</p>
+                        </div>
+                    </figcaption>
                 </figure>
                 <figure>
-                    <img src="webagency_images/images/portfolio/original_pompadour.jpg" alt="réalisation">
-                    <figcaption></figcaption>
+                    <img src="webagency_images/images/portfolio/original_pompadour.jpg" alt="Original Pompadour">
+                    <figcaption>
+                        <div>
+                            <b>Original Pompadour</b>
+                            <p>Dégustez notre savoureuse boisson 100% fruits</p>
+                        </div>
+                    </figcaption>
                 </figure>
                 <figure>
-                    <img src="webagency_images/images/portfolio/04.jpg" alt="réalisation">
-                    <figcaption></figcaption>
+                    <img src="webagency_images/images/portfolio/spand_peace.jpg" alt="Spand Peace">
+                    <figcaption>
+                        <div>
+                            <b>Spand Peace</b>
+                            <p>L'impression de haute qualité sur tous les supports</p>
+                        </div>
+                    </figcaption>
                 </figure>
                 <figure>
-                    <img src="webagency_images/images/portfolio/shop_bag.jpg" alt="réalisation">
-                    <figcaption></figcaption>
+                    <img src="webagency_images/images/portfolio/shop_bag.jpg" alt="Shop Bag">
+                    <figcaption>
+                        <div>
+                            <b>Shop Bag</b>
+                            <p>Du design jusque dans le sac</p>
+                        </div>
+                    </figcaption>
                 </figure>
                 <figure>
-                    <img src="webagency_images/images/portfolio/06.jpg" alt="réalisation">
-                    <figcaption></figcaption>
+                    <img src="webagency_images/images/portfolio/travel.jpg" alt="Travel">
+                    <figcaption>
+                        <div>
+                            <b>Travel</b>
+                            <p>Des voyages jusqu'au sommet des montagnes</p>
+                        </div>
+                    </figcaption>
                 </figure>
                 <figure>
-                    <img src="webagency_images/images/portfolio/arrow.jpg" alt="réalisation">
-                    <figcaption></figcaption>
+                    <img src="webagency_images/images/portfolio/arrow.jpg" alt="Arrow">
+                    <figcaption>
+                        <div>
+                            <b>Arrow</b>
+                            <p>Les livraisons les plus rapides de tous les temps</p>
+                        </div>
+                    </figcaption>
                 </figure>
                 <figure>
-                    <img src="webagency_images/images/portfolio/be_theme.jpg" alt="réalisation">
-                    <figcaption></figcaption>
+                    <img src="webagency_images/images/portfolio/be_theme.jpg" alt="Be Theme">
+                    <figcaption>
+                        <div>
+                            <b>Be Theme</b>
+                            <p>Découvrez nos solutions en bureautique et imprimerie</p>
+                        </div>
+                    </figcaption>
                 </figure>
                 <figure>
-                    <img src="webagency_images/images/portfolio/food.jpg" alt="réalisation">
-                    <figcaption></figcaption>
+                    <img src="webagency_images/images/portfolio/good_food.jpg" alt="Good Food">
+                    <figcaption>
+                        <div>
+                            <b>Good Food</b>
+                            <p>Des repas healty et des conseils dietétiques</p>
+                        </div>
+                    </figcaption>
                 </figure>
             </div>
         </section>
         
         <section id="contact">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2216096949483!2d2.3476369155720245!3d48.873051779288936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25%20Rue%20d&#39;Hauteville%2C%2075010%20Paris!5e0!3m2!1sfr!2sfr!4v1570474821137!5m2!1sfr!2sfr"></iframe>
             <div id="form">
-                <h2>Contact Info</h2>
-                <p>
-                    WebAgency SAS
-                    25 Rue d'Hauteville, 75010 Paris
-                    Tel : 01 02 03 04 05
-                </p>
+                <div class="header">
+                    <h2>Contact Info</h2>
+                    <p>
+                        WebAgency SAS <br>
+                        25 Rue d'Hauteville, 75010 Paris <br>
+                        Tel : 01 02 03 04 05
+                    </p>
+                </div>
                 <form>
-                    <input type="text" name="" placeholder="Name">
-                    <input type="email" name="" placeholder="Email">
-                    <input type="text" name="" placeholder="Subject">
-                    <textarea name="" id="" cols="25" rows="10" placeholder="Message"></textarea>
-                    <button type="submit" class="bgblue">Send Message</button>
+                    <p><input type="text" name="" placeholder="Name"></p>
+                    <p><input type="email" name="" placeholder="Email"></p>
+                    <p><input type="text" name="" placeholder="Subject"></p>
+                    <p><textarea name="" id="" cols="20" rows="8" placeholder="Message"></textarea></p>
+                    <p><button type="submit" class="bgblue">Send Message</button></p>
                 </form>
             </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2216096949483!2d2.3476369155720245!3d48.873051779288936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25%20Rue%20d&#39;Hauteville%2C%2075010%20Paris!5e0!3m2!1sfr!2sfr!4v1570474821137!5m2!1sfr!2sfr"></iframe>
         </section>
     </body>
 </html>
