@@ -4,13 +4,14 @@ section {
 }
 header {
     height: 60px;
-    padding: 0;
+    padding: 0 100px;
+    justify-content: space-between;
 }
 h1 {
     font-size: 2em;
 }
 h2 {
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 .bgblue {
     padding: 10px;
@@ -21,14 +22,15 @@ h2 {
 
 #intro {
     width: 45%;
-    max-width: 400px;
-    bottom: 15%;
+    max-width: 450px;
+    max-height: 160px;
+    top: 35%;
+    bottom: 25%;
 }
 
 figure {
     min-width: 210px;
     max-width: 235px;
-    width: 25%;
 }
 
 

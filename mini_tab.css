@@ -38,7 +38,7 @@ header nav {
 #intro {
     width: 255px;
     left: 5%;
-    bottom: 15px;
+    /* bottom: 15px; */
 }
 #computer {
     width: 380px;
@@ -63,21 +63,16 @@ figcaption * {
         font-size: 1.8em;
     }
     h2 {
-        font-size: 1.3em;
+        font-size: 1em;
     }
     .header {
         width: 70%;
     }
     #intro {
         width: 310px;
-        bottom: 20px;
     }
 }
 @media screen and (min-width: 700px) {
-    #intro {
-        bottom: 35px;
-        left: 10%;
-    }
     #nav-portfolio {
         height: 35px;
     }

@@ -1,5 +1,12 @@
+.bold {
+    font-weight: 600;
+}
+p, li {
+    font-size: 13px;
+}
 #intro {
-    top: 25%;
+    left: 100px;
+    text-align: inherit;
 }
 
 .flex ul {
@@ -15,9 +22,6 @@
     flex-direction: inherit;
 }
 
-#nav-portfolio {
-    box-sizing: border-box;
-}
 #nav-portfolio li {
     height: 100%; width: 100%;
     display: flex;
@@ -30,6 +34,7 @@
 #nav-portfolio li:hover {
     background: #5CADD3 content-box;
     color: white;
+    border-radius: 2px;
 }
 
 figure {
@@ -50,4 +55,10 @@ figcaption {
 figcaption div {
     position: absolute;
     bottom: 0;
+}
+
+@media screen and (min-width: 1100px) {
+    #intro {
+        max-width: 500px;
+    }
 }
