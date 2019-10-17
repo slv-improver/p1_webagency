@@ -4,163 +4,224 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="webagency_images/fonts/fontawesome/css/fontawesome.min.css">
+        <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
         <link rel="stylesheet" media="all" href="mobile_reset.css" type="text/css">
-	    <link rel="stylesheet" media="screen and (min-width: 480px)" href="mini_tab.css" type="text/css">
 	    <link rel="stylesheet" media="screen and (min-width: 768px)" href="tab.css" type="text/css">
 	    <link rel="stylesheet" media="screen and (min-width: 1024px)" href="desktop.css" type="text/css">
+        <!-- <link rel="stylesheet" href="border.css" /> -->
         <title>WebAgency</title>
     </head>
     <body>
-        <header>
-            <img src="webagency_images/images/logo.png" alt="logo" id="logo"/>
+        <header class="flx">
+            <img src="webagency_images/images/logo.png" alt="logo" />
             <nav>
-                <ul id="nav-menu">
-                    <li class="nav-list"><a href="#accueil">Accueil</a></li>
-                    <li class="nav-list"><a href="#services">Services</a></li>
-                    <li class="nav-list"><a href="#portfolio">Portfolio</a></li>
-                    <li class="nav-list"><a href="#contact">Contact</a></li>
+                <ul class="flx">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
-
+        
         <section id="accueil">
-            <img src="webagency_images/images/slider/bg1.jpg" alt="filette" id="slider">
-            <div id="intro">
-                <h1><span class="clrblue">WEBAGENCY</span> : L'AGENCE DE TOUS VOS PROJETS !</h1>
+            <div class="icon-block arrow flx">
+                <i class="fa fa-angle-left"></i>
+            </div>
+            <img src="webagency_images/images/slider/bg1.jpg" alt="filette" >
+            <div class="head">
+                <h1><span class="blue">WEBAGENCY</span> : L'AGENCE DE TOUS VOS PROJETS !</h1>
                 <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
-                <p><button type="button" class="bgblue bold">Plus d'infos</button></p>
+                <p><button type="button" class="backblue med">Plus d'infos</button></p>
+            </div>
+            <div class="icon-block arrow flx">
+                <i class="fa fa-angle-right"></i>
             </div>
         </section>
         
-        <section id="services">
-            <div class="header">
+        <section id="services" class="flx col">
+            <div class="head">
                 <h1>NOS SERVICES</h1>
+                <div class="icon-block line flx">
+                    <hr>
+                    <div class="circle"></div>
+                </div>
                 <p>Votre entrepise souhaite s'implenter ou améliorer sa présence sur le web ? Nous concevons votre site de A à Z.</p>
             </div>
-            <div class="flex">
-                <img src="webagency_images/images/main-feature.png" alt="ordinateur" id="computer">
-                <ul>
-                    <li>
-                        <h2>UX design</h2>
-                        <p>
-                            Éxigez la meilleur expérience pour vos visiteurs.
-                            L'habille coopération entre technologie, stratégie et design.
-                            Nous étudions, avec vous, vos utilisateurs type et leur profil afin de faire correspondre les fonctionnalités et leurs besoins.
-                        </p>
+            <div id="description" class="flx">
+                <img src="webagency_images/images/main-feature.png" alt="ordinateur" >
+                <ul class="flx col">
+                    <li class="flx">
+                        <div class="icon-block list-ico flx">
+                            <i class="fa fa-chart-line"></i>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="block-li">
+                            <h2>UX design</h2>
+                            <p>
+                                Éxigez la meilleur expérience pour vos visiteurs.
+                                L'habille coopération entre technologie, stratégie et design.
+                                Nous étudions, avec vous, vos utilisateurs type et leur profil afin de faire correspondre les fonctionnalités et leurs besoins.
+                            </p>
+                        </div>
                     </li>
-                    <li>
-                        <h2>UI design</h2>
-                        <p>
-                            Imagination et créativité sont au coeur de cet art.
-                            Nous vous conseillons pour créer une identité visuelle et un aspect esthétique à votre site par le biais des couleurs et de la typographie.
-                        </p>
+                    <li class="flx">
+                        <div class="icon-block list-ico flx">
+                            <i class="fa fa-cubes"></i>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="block-li">
+                            <h2>UI design</h2>
+                            <p>
+                                Imagination et créativité sont au coeur de cet art.
+                                Nous vous conseillons pour créer une identité visuelle et un aspect esthétique à votre site par le biais des couleurs et de la typographie.
+                            </p>
+                        </div>
                     </li>
-                    <li>
-                        <h2>SEO</h2>
-                        <p>
-                            À la frontière entre psychologie humaine et algorithmique informatique.
-                            Nous optimisons le référencement de votre site pour répondre aux complexités des moteurs de recherche.
-                        </p>
+                    <li class="flx">
+                        <div class="icon-block list-ico flx">
+                            <i class="fa fa-chart-pie"></i>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="block-li">
+                            <h2>SEO</h2>
+                            <p>
+                                À la frontière entre psychologie humaine et algorithmique informatique.
+                                Nous optimisons le référencement de votre site pour répondre aux complexités des moteurs de recherche.
+                            </p>
+                        </div>
                     </li>
                 </ul>
             </div>
         </section>
 
-        <section id="portfolio">
-            <div class="header">
+        <section id="portfolio" class="flx col">
+            <div class="head">
                 <h1>NOS PROJETS</h1>
+                <div class="icon-block line flx">
+                    <hr>
+                    <div class="circle"></div>
+                </div>
+                
                 <p>
-                    Du site associatif à la multi-nationnale en passant par le e-commerce et les start-up, tous vos projets trouveront une place parmis nous.
+                    Du site associatif à la multi-nationnale en passant par le e-commerce et la start-up, 
+                    tous vos projets trouveront une place parmis nous.
                 </p>
             </div>
             <nav>
-                <ul id="nav-portfolio" class="bold">
-                    <li><a href="#portfolio">All Works</a></li>
-                    <li><a href="#portfolio">Creative</a></li>
-                    <li><a href="#portfolio">Corporate</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                <ul id="filtre" class="flx med">
+                    <li><button class="med">All Works<i class="fa fa-caret-down"></i></button></li>
+                    <li><button class="med">Creative</button></li>
+                    <li><button class="med">Corporate</button></li>
+                    <li><button class="med">Portfolio</button></li>
                 </ul>
             </nav>
-            <div id="real">
+            <div class="flx">
                 <figure>
                     <img src="webagency_images/images/portfolio/on_the_noise.jpg" alt="On The Noise">
                     <figcaption>
-                        <div>
+                        <div class="hide">
+                            <div class="icon-block eyes flx">
+                                <i class="fa fa-eye"></i>
+                            </div>
                             <h2>On The Noise</h2>
-                            <p class="bold">La meilleure référence pour les lunettes</p>
+                            <p class="med">La meilleure référence pour les lunettes</p>
                         </div>
                     </figcaption>
                 </figure>
                 <figure>
                     <img src="webagency_images/images/portfolio/pink_rabbit.jpg" alt="Pink Rabbit">
                     <figcaption>
-                        <div>
+                        <div class="hide">
+                            <div class="icon-block eyes flx">
+                                <i class="fa fa-eye"></i>
+                            </div>
                             <h2>Pink Rabbit</h2>
-                            <p class="bold">Des cadeaux personnalisés en origamie</p>
+                            <p class="med">Des cadeaux personnalisés en origamie</p>
                         </div>
                     </figcaption>
                 </figure>
                 <figure>
                     <img src="webagency_images/images/portfolio/original_pompadour.jpg" alt="Original Pompadour">
                     <figcaption>
-                        <div>
+                        <div class="hide">
+                            <div class="icon-block eyes flx">
+                                <i class="fa fa-eye"></i>
+                            </div>
                             <h2>Original Pompadour</h2>
-                            <p class="bold">Dégustez notre savoureuse boisson 100% fruits</p>
+                            <p class="med">Dégustez notre savoureuse boisson 100% fruits</p>
                         </div>
                     </figcaption>
                 </figure>
                 <figure>
                     <img src="webagency_images/images/portfolio/spand_peace.jpg" alt="Spand Peace">
                     <figcaption>
-                        <div>
+                        <div class="hide">
+                            <div class="icon-block eyes flx">
+                                <i class="fa fa-eye"></i>
+                            </div>
                             <h2>Spand Peace</h2>
-                            <p class="bold">L'impression de haute qualité sur tous les supports</p>
+                            <p class="med">L'impression de haute qualité sur tous les supports</p>
                         </div>
                     </figcaption>
                 </figure>
                 <figure>
                     <img src="webagency_images/images/portfolio/shop_bag.jpg" alt="Shop Bag">
                     <figcaption>
-                        <div>
+                        <div class="hide">
+                            <div class="icon-block eyes flx">
+                                <i class="fa fa-eye"></i>
+                            </div>
                             <h2>Shop Bag</h2>
-                            <p class="bold">Du design jusque dans le sac</p>
+                            <p class="med">Du design jusque dans le sac</p>
                         </div>
                     </figcaption>
                 </figure>
                 <figure>
                     <img src="webagency_images/images/portfolio/travel.jpg" alt="Travel">
                     <figcaption>
-                        <div>
+                        <div class="hide">
+                            <div class="icon-block eyes flx">
+                                <i class="fa fa-eye"></i>
+                            </div>
                             <h2>Travel</h2>
-                            <p class="bold">Des voyages jusqu'au sommet des montagnes</p>
+                            <p class="med">Des voyages jusqu'au sommet des montagnes</p>
                         </div>
                     </figcaption>
                 </figure>
                 <figure>
                     <img src="webagency_images/images/portfolio/arrow.jpg" alt="Arrow">
                     <figcaption>
-                        <div>
+                        <div class="hide">
+                            <div class="icon-block eyes flx">
+                                <i class="fa fa-eye"></i>
+                            </div>
                             <h2>Arrow</h2>
-                            <p class="bold">Les livraisons les plus rapides de tous les temps</p>
+                            <p class="med">Les livraisons les plus rapides de tous les temps</p>
                         </div>
                     </figcaption>
                 </figure>
                 <figure>
                     <img src="webagency_images/images/portfolio/be_theme.jpg" alt="Be Theme">
                     <figcaption>
-                        <div>
+                        <div class="hide">
+                            <div class="icon-block eyes flx">
+                                <i class="fa fa-eye"></i>
+                            </div>
                             <h2>Be Theme</h2>
-                            <p class="bold">Découvrez nos solutions en bureautique et imprimerie</p>
+                            <p class="med">Découvrez nos solutions en bureautique et imprimerie</p>
                         </div>
                     </figcaption>
                 </figure>
                 <figure>
                     <img src="webagency_images/images/portfolio/good_food.jpg" alt="Good Food">
                     <figcaption>
-                        <div>
+                        <div class="hide">
+                            <div class="icon-block eyes flx">
+                                <i class="fa fa-eye"></i>
+                            </div>
                             <h2>Good Food</h2>
-                            <p class="bold">Des repas healty et des conseils dietétiques</p>
+                            <p class="med">Des repas healty et des conseils dietétiques</p>
                         </div>
                     </figcaption>
                 </figure>
@@ -168,10 +229,10 @@
         </section>
         
         <section id="contact">
-            <div id="form">
-                <div class="header">
+            <div id="form" class="flx col">
+                <div class="head">
                     <h2>Contact Info</h2>
-                    <p class="bold">WebAgency SAS</p>
+                    <p class="med">WebAgency SAS</p>
                     <p>25 Rue d'Hauteville, 75010 Paris</p>
                     <p>Tel : 01 02 03 04 05</p>
                 </div>
@@ -180,7 +241,7 @@
                     <p><input type="email" name="email" placeholder="Email"></p>
                     <p><input type="text" name="subject" placeholder="Sujet"></p>
                     <p><textarea name="message" cols="20" rows="8" placeholder="Message"></textarea></p>
-                    <p class="bold"><button type="submit" class="bgblue">Envoyer le Message</button></p>
+                    <p ><button type="submit" class="backblue med">Envoyer le Message</button></p>
                 </form>
             </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2216096949483!2d2.3476369155720245!3d48.873051779288936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25%20Rue%20d&#39;Hauteville%2C%2075010%20Paris!5e0!3m2!1sfr!2sfr!4v1570474821137!5m2!1sfr!2sfr"></iframe>

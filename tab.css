@@ -1,67 +1,59 @@
-
-section {
-    padding-top: 60px;
+body {
+    font-size: 0.9em;
 }
-header {
-    height: 60px;
-    padding: 0 100px;
-    justify-content: space-between;
+.head {
+    margin: 10px;
 }
-h1 {
-    font-size: 2em;
+button {
+    padding: 8px;
 }
-h2 {
-    font-size: 1.2em;
+#description {
+    flex-direction: row;
 }
-.bgblue {
-    padding: 10px;
-}
-.header {
-    width: 55%;
-}
-
-#intro {
+#description img {
     width: 45%;
-    max-width: 450px;
-    max-height: 160px;
-    top: 35%;
-    bottom: 25%;
 }
-
-figure {
-    min-width: 210px;
-    max-width: 235px;
+#description li {
+    margin: 5px;
 }
-
-
-#contact {
-    position: relative;
+#portfolio figure {
+    width: 30%;
 }
 iframe {
     position: absolute;
-    top: 55px;
-    height: 600px;
+    top: 50px;
+    right: 0;
+    left: 0;
+    height: 500px;
 }
 #form {
     position: absolute;
+    right: 35px;
     top: 80px;
-    right: 10%;
-    z-index: 20;
-    min-width: 300px;
-    max-width: 350px;
-    width: 25%;
-    max-width: 320px;
-    background: #ebf3f7e0;
-    text-align: left;
+    background: rgba(255, 255, 255, 0.849);
+    width: 300PX;
+    padding: 20px 0;
 }
-#form .header {
-    margin: 0;
-    width: 95%;
-    text-align: left;
+form {
+    width: 90%;
 }
-#form h2 {
-    font-size: 1.6em;
+
+.list-ico {
+    height: 40px;
+    width: 40px;
 }
-input, textarea {
-    width: 95%;
+.arrow {
+    height: 40px;
+    width: 20px;
+}
+.arrow:first-child {
+    border-radius: 0 20px 20px 0;
+}
+.arrow:last-child {
+    border-radius: 20px 0 0 20px;
+}
+.eyes {
+    width: 30px;
+    height: 30px;
+    top: -14px;
 }

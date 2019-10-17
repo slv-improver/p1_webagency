@@ -36,10 +36,13 @@ time, mark, audio, video
     text-decoration: none;
     list-style: none;
     color: inherit;
+    outline: transparent;
 }
 
+/* ···················
+GLOBAL
+······················*/
 
-        /*──────────── global */
 body {
     font-size: 0.8em;
     font-family: "Roboto-Regular";
@@ -47,200 +50,335 @@ body {
 }
 h1 {
     font-size: 1.4em;
-    margin: 0 0 10px 0;
 }
 h2 {
     font-size: 1.2em;
-    margin: 5px 0 5px 0;
 }
 h1, h2 {
     font-family: "Roboto-Bold";
-    color: rgb(12, 12, 12);
-}
-b {
-    font-family: 'Roboto-Bold';
-    font-size: 1.2em;
+    color: black;
+    padding: 0 3px;
+    margin: 0 0 5px 0;
 }
 p {
-    margin: 0 0 4px 0;
+    margin: 0 0 5px 0;
+    padding: 0 6px;
 }
-
+.med {
+    font-family: "Roboto-Medium";
+}
+#accueil h1, .hide h2 {     /* correction de la priorité */
+    color: inherit;
+}
 section {
-    padding-top: 50px;
-}
-
-nav {
+    position: relative;
     text-align: center;
+    padding: 50px 0 10px 0;
 }
-
-ul {
+img {
+    max-width: 100%;
+}
+.flx, .head {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 80%;
-    margin: auto;
 }
-
-.flex ul {
+.col, .head {
     flex-direction: column;
 }
-
-button {
-    padding: 5px;
+.blue {
+    color: #5CADD3;
 }
-
-.bgblue {
+.backblue {
     color: white;
     background: #5CADD3;
     border-bottom: 2px rgb(60, 157, 202) solid;
 }
-
-.clrblue {
-    color: #5CADD3;
+button {
+    padding: 5px;
+    cursor: pointer;
 }
-.header {
-    text-align: center;
-    padding: 4px ;
+button:focus {
+    border-bottom: 2px rgb(60, 157, 202) solid;
+}
+hr {
+    width: 15px;
 }
 
+/* ···················
+HEADER
+······················*/
 
-        /*───────────── header */
 header {
+    flex-direction: column;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    padding-bottom: 4px;
-    height: 45px;
-    z-index: 100;
-    text-align: center;
+    padding: 0 5%;
     background: white;
+    z-index: 100;
 }
-#logo {
-    width: 30%;
-    min-width: 120px;
-    max-width: 170px;
+header img {
+    height: 20px;
 }
-#nav-menu li {
-    padding: 0 5px;
+header li {
+    border: rgba(92, 173, 211, 0) 2px solid;
+    padding: 5px 1px;
+}
+header li:hover {
+    transition: ease 1s;
+    border-top: #5CADD3 2px solid;
 }
 
+/* ···················
+ACCUEIL
+······················*/
 
-        /*──────────────── accueil */
 #accueil {
     position: relative;
 }
-
-
-#intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: white;
-    width: 55%;
-    min-width: 203px;
-    margin: 5px;
+#accueil .head {
     position: absolute;
-    top: 30%;
-    left: 5px;
-    text-align: justify;
-}
-
-#intro h1 {
+    bottom: 10px;
+    top: 50px;
+    padding: 0 20px;
     color: white;
-    margin: 0 0 5px 0;
-}
-#intro p {
-    margin-bottom: 7px;
 }
 
-#slider {
-    width: 100%;
-    min-height: 126px;
-}
+/* ···················
+SERVICES
+······················*/
 
-
-        /*─────────────── services */
-.flex {
-    display: flex;
+#description {
     flex-direction: column;
 }
-#computer {
-    width: 80%;
-    margin: auto;
+#description .block-li {
+    width: 100%;
 }
-.flex ul {
-    flex-direction: column; 
+#description p {
     text-align: justify;
 }
+#description li {
+    justify-content: space-around;
+}
+#services img {
+    width: 70%;
+}
 
-        /*─────────────── portfolio */
+/* ···················
+PORTFOLIO
+······················*/
+
 #portfolio {
-    background: #F5F5F5;
+    background: rgb(240, 240, 240);
 }
-#nav-portfolio {
-    border-radius: 4px;
-    height: 30px;
-    background: rgb(199, 199, 199);
-}
-
-#real {
-    display: flex;
+#portfolio div.flx {
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 10px;
 }
-figure {
+#portfolio nav {
+    background: rgb(199, 199, 199);
+    margin: 0 0 5px 0;
+    border-radius: 5px;
+}
+#filtre button {
+    background: rgb(199, 199, 199);
     position: relative;
-    width: 40%;
-    margin-top: 5px;
+    border-bottom: 2px rgba(92, 173, 211, 0) solid;
 }
-figure img {
-    width: 100%;
+#filtre li:first-child button {
+    border-radius: 5px 0 0 5px;
+    background: #5CADD3;
+    border-bottom: #468CAD 2px solid;
+    color: white;
 }
-figcaption {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    font-size: 0.8em;
+#filtre li:last-child button {
+    border-radius: 0 5px 5px 0;
 }
-figcaption div {
+#filtre button:hover {
+    transition: ease 1s;
+    background: #5CADD3;
+    border-bottom: #468CAD 2px solid;
+    color: white;
+}
+#portfolio figure {
+    width: 45%;
+    position: relative;
+    margin: 4px;
+}
+.hide {
+    font-size: 0.7em;
+    background: rgba(46, 46, 46, 0.5);
+    padding: 3px;
+    color: white;
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(46, 46, 46, 0.555);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 5px;
 }
-figcaption * {
-    border: 0;
-    margin-bottom: 0;
-    padding: 2px;
-    color: white;
-}
-
-
-
-        /*──────────────── contact */
-#form {
-    text-align: center;
-    padding: 15px;
-}
-#form .header p {
+.hide p, .hide h2 {
     margin: 0;
 }
-form p {
-    margin: 10px 0;
-}
-input, textarea {
-    border: rgb(168, 163, 163) 1px solid;
-    width: 50%;
-    padding: 5px 0 5px 15px;
-}
+
+/* ···················
+CONTACT
+······················*/
+
 iframe {
     width: 100%;
-    height: 300px;
+    z-index: 1;
+}
+#contact .head {
+    margin: 0 0 5px 0;
+}
+#contact .head p {
+    margin: 0;
+}
+#form {
+    z-index: 10;
+}
+form {
+    width: 200px;
+}
+input, textarea {
+    width: 90%;
+    border: rgb(189, 189, 189) 1px solid;
+    text-align: left;
+    padding: 3px;
+}
+
+/* ···················
+ICONS
+······················*/
+
+.line {
+    justify-content: center;
+    margin: 0 0 5px 0;
+}
+hr {
+    width: 100px;
+    height: 1px;
+    border: 0;
+    background: rgb(189, 189, 189);
+}
+.circle {
+    width: 10px; height: 10px;
+    background: #5CADD3;
+    border: white 2px solid;
+    border-radius: 50%;
+}
+.line .circle {
+    position: absolute;
+}
+
+/* ───────────────── */
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    background: rgba(46, 46, 46, 0.5);
+    width: 15px;
+    height: 30px;
+    color: white;
+    justify-content: center;
+}
+.arrow:first-child {
+    border-radius: 0 15px 15px 0;
+    left: 0;
+}
+.arrow:last-child {
+    border-radius: 15px 0 0 15px;
+    right: 0;
+}
+
+/* ───────────────── */
+
+.list-ico {
+    position: relative;
+    justify-content: center;
+    color: #5CADD3;
+    border: rgb(189, 189, 189) 1px solid;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.list-ico .circle {
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    right: -5px;
+}
+/* ───────────────── */
+
+.eyes {
+    background: #5CADD3;
+    border: 1px white solid;
+    position: absolute;
+    right: 3%;
+    top: -9px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+.fa-eye {
+    position: relative;
+    top: 1px;
+}
+
+/* ───────────────── */
+
+.fa-caret-down {
+    font-size: 16px;
+    color: #468CAD;
+    position: absolute;
+    right: 42%;
+    bottom: -12px;
+}
+
+
+@media screen and (min-width: 425px) {
+    header {
+        flex-direction: row;
+    }
+    header img {
+        height: 35px;
+    }
+    header li {
+        padding: 15px 2px;
+    }
+    #accueil .head {
+        width: 50%;
+        justify-content: space-around;
+    }
+    #description .block-li {
+        width: 85%;
+    }
+    .hide {
+        font-size: 0.8em;
+    }
+    .eyes {
+        width: 21px;
+        height: 21px;
+        top: -12px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    #accueil .head {
+        justify-content: center;
+    }
+    .hide {
+        font-size: 1em;
+    }
+    .eyes {
+        width: 24px;
+        height: 24px;
+    }
+    form {
+        width: 60%;
+    }
+    iframe {
+        height: 200px;
+    }
 }

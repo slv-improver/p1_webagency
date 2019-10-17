@@ -1,64 +1,139 @@
-.bold {
-    font-weight: 600;
+body {
+    font-size: 0.9em;
 }
-p, li {
-    font-size: 13px;
+section {
+    padding: 75px 0 25px 0;
 }
-#intro {
+header {
+    padding: 0 100px;
+}
+header li {
+    padding: 25px 8px;
+}
+header img {
+    height: 45px;
+}
+#accueil .head {
     left: 100px;
-    text-align: inherit;
+    margin: 0;
+    padding: 0;
+    width: 520px;
+    text-align: left;
+    align-items: flex-start;
 }
-
-.flex ul {
-    margin: 30px 10% 0 0;
-    flex: 0.7;
+#accueil .head p {
+    padding: 0;
 }
-#computer {
-    width: 35%;
+#accueil h1 {
+    padding: 0;
+}
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.head p {
+    margin: 10px 0;
+}
+#services li {
+    margin: 15px;
+}
+#description {
+    width: 90%;
+}
+#description img {
+    width: 450px;
     max-width: inherit;
 }
-.flex {
-    display: flex;
-    flex-direction: inherit;
+#portfolio {
+    padding: 75px 80px 10px 80px;
 }
-
-#nav-portfolio li {
-    height: 100%; width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#portfolio nav {
+    margin: 25px 0 35px 0;
 }
-.nav-list:hover {
-    border-top: 3px solid #5CADD3;
+#portfolio figure {
+    width: 23%;
 }
-#nav-portfolio li:hover {
-    background: #5CADD3 content-box;
-    color: white;
-    border-radius: 2px;
-}
-
-figure {
-    width: 20%;
-    min-width: 240px;
-    max-width: inherit;
-}
-figcaption {
+.hide {
     opacity: 0;
+    font-size: 0.9em;
 }
-figcaption:hover {
+.hide h2, .hide p {
+    padding: 2px;
+}
+figure:hover .hide {
+    transition: ease 1s;
     opacity: 1;
 }
-
-figcaption {
-    height: 100%;
+iframe {
+    top: 75px;
+    height: 650px;
 }
-figcaption div {
-    position: absolute;
-    bottom: 0;
+#form {
+    right: 100px;
+    top: 150px;
+    padding: 20px;
+}
+#form h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+}
+form {
+    width: 100%;
+}
+form p {
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+input, textarea {
+    padding: 10px;
+    width: 90%;
 }
 
-@media screen and (min-width: 1100px) {
-    #intro {
-        max-width: 500px;
-    }
+.arrow {
+    height: 50px;
+    width: 25px;
+}
+.arrow:first-child {
+    border-radius: 0 25px 25px 0;
+}
+.arrow:last-child {
+    border-radius: 25px 0 0 25px;
+}
+.arrow .fa {
+    font-size: 25px;
+}
+.fa-angle-left {
+    position: relative;
+    right: 2px;
+}
+.fa-angle-right {
+    position: relative;
+    left: 2px;
+}
+.line hr{
+    width: 150px;
+}
+.line .circle {
+    width: 12px;
+    height: 12px;
+}
+.list-ico {
+    width: 45px;
+    height: 45px;
+}
+.list-ico .fa {
+    font-size: 20px;
+}
+.list-ico:hover .fa {
+    transition: ease 1s;
+    transform: scale(2);
+}
+.list-ico .circle {
+    right: -6px;
+    width: 9px;
+    height: 9px;
+}
+.fa-caret-down {
+    font-size: 20px;
+    bottom: -15px;
 }
