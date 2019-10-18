@@ -76,7 +76,7 @@ section {
     padding: 50px 0 10px 0;
 }
 img {
-    max-width: 100%;
+    width: 100%;
 }
 .flx, .head {
     display: flex;
@@ -121,6 +121,7 @@ header {
 }
 header img {
     height: 20px;
+    width: inherit;
 }
 header li {
     border: rgba(92, 173, 211, 0) 2px solid;

@@ -5,7 +5,7 @@ section {
     padding: 75px 0 25px 0;
 }
 header {
-    padding: 0 100px;
+    padding: 0 10%;
 }
 header li {
     padding: 25px 8px;
@@ -14,7 +14,7 @@ header img {
     height: 45px;
 }
 #accueil .head {
-    left: 100px;
+    left: 10%;
     margin: 0;
     padding: 0;
     width: 520px;
@@ -34,15 +34,22 @@ h1 {
 .head p {
     margin: 10px 0;
 }
-#services li {
-    margin: 15px;
+#services {
+    padding: 0 10%;
 }
 #description {
-    width: 90%;
+    justify-content: space-around;
 }
 #description img {
     width: 450px;
     max-width: inherit;
+}
+#description ul {
+    align-items: flex-start;
+    width: 50%;
+}
+#description li {
+    margin: 15px 0;
 }
 #portfolio {
     padding: 75px 80px 10px 80px;
@@ -69,7 +76,7 @@ iframe {
     height: 650px;
 }
 #form {
-    right: 100px;
+    right: 10%;
     top: 150px;
     padding: 20px;
 }
@@ -135,5 +142,5 @@ input, textarea {
 }
 .fa-caret-down {
     font-size: 20px;
-    bottom: -15px;
+    bottom: -14px;
 }
