@@ -35,7 +35,8 @@ h1 {
     margin: 10px 0;
 }
 #services {
-    padding: 0 10%;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 #description {
     justify-content: space-around;
@@ -52,7 +53,8 @@ h1 {
     margin: 15px 0;
 }
 #portfolio {
-    padding: 75px 80px 10px 80px;
+    padding-right: 80px;
+    padding-left: 80px;
 }
 #portfolio nav {
     margin: 25px 0 35px 0;
@@ -79,6 +81,10 @@ iframe {
     right: 10%;
     top: 150px;
     padding: 20px;
+    align-items: flex-start;
+}
+#form .head {
+    align-items: flex-start;
 }
 #form h2 {
     font-size: 1.5em;
@@ -90,6 +96,7 @@ form {
 form p {
     margin: 10px 0 0 0;
     padding: 0;
+    text-align: left;
 }
 input, textarea {
     padding: 10px;
