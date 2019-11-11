@@ -65,16 +65,20 @@ h1 {
 .hide {
     opacity: 0;
     font-size: 0.9em;
+    text-align: left;
+    height: 40%;
+}
+figure:nth-child(4) .hide {
+    opacity: 1;
 }
 .hide h2, .hide p {
-    padding: 2px;
+    padding: 1px 5px;
 }
 figure:hover .hide {
     transition: ease 1s;
     opacity: 1;
 }
 iframe {
-    top: 75px;
     height: 650px;
 }
 #form {
@@ -150,4 +154,10 @@ input, textarea {
 .fa-caret-down {
     font-size: 20px;
     bottom: -14px;
+}
+
+@media screen and (min-width: 1200px) {
+    .hide {
+        height: 30%;
+    }
 }

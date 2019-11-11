@@ -126,6 +126,9 @@ header li {
     border: rgba(92, 173, 211, 0) 2px solid;
     padding: 5px 1px;
 }
+header li:first-child {
+    border-top: #5CADD3 2px solid;
+}
 header li:hover {
     transition: ease 1s;
     border-top: #5CADD3 2px solid;
@@ -231,7 +234,17 @@ CONTACT
 
 iframe {
     width: 100%;
+    height: 500px;
+    position: relative;
     z-index: 1;
+}
+#map-overlay {
+    position: absolute;
+    height: 510px;
+    bottom: 0;
+    background: rgba(92, 173, 211, 0.4);
+    width: 100%;
+    z-index: 2;
 }
 #contact .head {
     margin: 0 0 5px 0;
@@ -240,7 +253,7 @@ iframe {
     margin: 0;
 }
 #form {
-    z-index: 10;
+    z-index: 2;
 }
 form {
     width: 200px;
@@ -286,6 +299,7 @@ hr {
     height: 30px;
     color: white;
     justify-content: center;
+    cursor: pointer;
 }
 .arrow:first-child {
     border-radius: 0 15px 15px 0;
@@ -381,8 +395,5 @@ hr {
     }
     form {
         width: 60%;
-    }
-    iframe {
-        height: 200px;
     }
 }
