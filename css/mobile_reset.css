@@ -1,0 +1,399 @@
+@font-face{font-family: "Roboto-Black";src: url('../webagency_images/fonts/Roboto-Black.ttf') format('truetype');}
+@font-face{font-family: "Roboto-Light";src: url('../webagency_images/fonts/Roboto-Light.ttf') format('truetype');}
+@font-face{font-family: "Roboto-Thin";src: url('../webagency_images/fonts/Roboto-Thin.ttf') format('truetype');}
+@font-face{font-family: "Roboto-Bold";src: url('../webagency_images/fonts/Roboto-Bold.ttf') format('truetype');}
+@font-face{font-family: "Roboto-Medium";src: url('../webagency_images/fonts/Roboto-Medium.ttf') format('truetype');}
+@font-face{font-family: "Roboto-BlackItalic";src: url('../webagency_images/fonts/Roboto-BlackItalic.ttf') format('truetype');}
+@font-face{font-family: "Roboto-LightItalic";src: url('../webagency_images/fonts/Roboto-LightItalic.ttf') format('truetype');}
+@font-face{font-family: "Roboto-ThinItalic";src: url('../webagency_images/fonts/Roboto-ThinItalic.ttf') format('truetype');}
+@font-face{font-family: "Roboto-BoldItalic";src: url('../webagency_images/fonts/Roboto-BoldItalic.ttf') format('truetype');}
+@font-face{font-family: "Roboto-MediumItalic";src: url('../webagency_images/fonts/Roboto-MediumItalic.ttf') format('truetype');}
+@font-face{font-family: "Roboto-Italic";src: url('../webagency_images/fonts/Roboto-Italic.ttf') format('truetype');}
+@font-face{font-family: "Roboto-Regular";src: url('../webagency_images/fonts/Roboto-Regular.ttf') format('truetype');}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, input, textarea, button, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+{
+    margin : 0 ;
+    padding : 0 ;
+    border : 0 ;
+    border-radius: 1px;
+    font-size : 100% ;
+    font : inherit ;
+    vertical-align : middle ;
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+    outline: transparent;
+}
+
+/* ···················
+GLOBAL
+······················*/
+
+body {
+    font-size: 0.8em;
+    font-family: "Roboto-Regular";
+    color: #64686D;
+}
+h1 {
+    font-size: 1.4em;
+}
+h2 {
+    font-size: 1.2em;
+}
+h1, h2 {
+    font-family: "Roboto-Bold";
+    color: black;
+    padding: 0 3px;
+    margin: 0 0 5px 0;
+}
+p {
+    margin: 0 0 5px 0;
+    padding: 0 6px;
+}
+.med {
+    font-family: "Roboto-Medium";
+}
+#accueil h1, .hide h2 {     /* correction de la priorité */
+    color: inherit;
+}
+section {
+    position: relative;
+    text-align: center;
+    padding: 55px 0 10px 0;
+}
+img {
+    width: 100%;
+}
+.flx, .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col, .head {
+    flex-direction: column;
+}
+.blue {
+    color: #5CADD3;
+}
+.backblue {
+    color: white;
+    background: #5CADD3;
+    border-radius: 3px;
+    border-bottom: 2px rgb(60, 157, 202) solid;
+}
+button {
+    padding: 5px;
+    cursor: pointer;
+}
+button:focus {
+    border-bottom: 2px rgb(60, 157, 202) solid;
+}
+hr {
+    width: 15px;
+}
+
+/* ···················
+HEADER
+······················*/
+
+header {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 5px 5% 0 5%;
+    background: white;
+    z-index: 100;
+}
+header img {
+    height: 20px;
+    width: inherit;
+}
+header li {
+    border: rgba(92, 173, 211, 0) 2px solid;
+    padding: 5px 1px;
+}
+header li:first-child {
+    border-top: #5CADD3 2px solid;
+}
+header li:hover {
+    transition: ease 1s;
+    border-top: #5CADD3 2px solid;
+}
+
+/* ···················
+ACCUEIL
+······················*/
+
+#accueil {
+    position: relative;
+}
+#accueil .head {
+    position: absolute;
+    bottom: 10px;
+    top: 53px;
+    padding: 0 20px;
+    color: white;
+}
+
+/* ···················
+SERVICES
+······················*/
+
+#description {
+    flex-direction: column;
+}
+#description .block-li {
+    width: 100%;
+}
+#description p {
+    text-align: justify;
+}
+#description ul {
+    padding: 5px;
+}
+#description li {
+    justify-content: space-around;
+}
+#services img {
+    width: 70%;
+}
+
+/* ···················
+PORTFOLIO
+······················*/
+
+#portfolio {
+    background: rgb(240, 240, 240);
+}
+#portfolio div.flx {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#portfolio nav {
+    background: rgb(199, 199, 199);
+    margin: 0 0 5px 0;
+    border-radius: 5px;
+}
+#filtre button {
+    background: rgb(199, 199, 199);
+    position: relative;
+    border-bottom: 2px rgba(92, 173, 211, 0) solid;
+}
+#filtre li:first-child button {
+    border-radius: 4px 0 0 4px;
+    background: #5CADD3;
+    border-bottom: #468CAD 2px solid;
+    color: white;
+}
+#filtre li:last-child button {
+    border-radius: 0 4px 4px 0;
+}
+#filtre button:hover {
+    transition: ease 1s;
+    background: #5CADD3;
+    border-bottom: #468CAD 2px solid;
+    color: white;
+}
+#portfolio figure {
+    width: 45%;
+    position: relative;
+    margin: 5px;
+}
+.hide {
+    font-size: 0.7em;
+    background: rgba(46, 46, 46, 0.5);
+    padding: 3px;
+    color: white;
+    height: 33%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.hide p, .hide h2 {
+    margin: 0;
+}
+
+/* ···················
+CONTACT
+······················*/
+
+iframe {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    z-index: 1;
+}
+#map-overlay {
+    position: absolute;
+    height: 510px;
+    bottom: 0;
+    background: rgba(92, 173, 211, 0.4);
+    width: 100%;
+    z-index: 2;
+}
+#contact .head {
+    margin: 0 0 5px 0;
+}
+#contact .head p {
+    margin: 0;
+}
+#form {
+    z-index: 2;
+}
+form {
+    width: 200px;
+}
+input, textarea {
+    width: 90%;
+    border: rgb(189, 189, 189) 1px solid;
+    text-align: left;
+    padding: 3px;
+}
+
+/* ···················
+ICONS
+······················*/
+
+.line {
+    justify-content: center;
+    margin: 0 0 5px 0;
+}
+hr {
+    width: 100px;
+    height: 1px;
+    border: 0;
+    background: rgb(189, 189, 189);
+}
+.circle {
+    width: 10px; height: 10px;
+    background: #5CADD3;
+    border: white 2px solid;
+    border-radius: 50%;
+}
+.line .circle {
+    position: absolute;
+}
+
+/* ───────────────── */
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    background: rgba(46, 46, 46, 0.5);
+    width: 15px;
+    height: 30px;
+    color: white;
+    justify-content: center;
+    cursor: pointer;
+}
+.arrow:first-child {
+    border-radius: 0 15px 15px 0;
+    left: 0;
+}
+.arrow:last-child {
+    border-radius: 15px 0 0 15px;
+    right: 0;
+}
+
+/* ───────────────── */
+
+.list-ico {
+    position: relative;
+    justify-content: center;
+    color: #5CADD3;
+    border: rgb(189, 189, 189) 1px solid;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.list-ico .circle {
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    right: -5px;
+}
+/* ───────────────── */
+
+.eyes {
+    background: #5CADD3;
+    border: 1px white solid;
+    position: absolute;
+    right: 3%;
+    top: -9px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+.fa-eye {
+    position: relative;
+    top: 1px;
+}
+
+/* ───────────────── */
+
+.fa-caret-down {
+    font-size: 16px;
+    color: #468CAD;
+    position: absolute;
+    right: 42%;
+    bottom: -12px;
+}
+
+
+@media screen and (min-width: 425px) {
+    header {
+        flex-direction: row;
+    }
+    header img {
+        height: 35px;
+    }
+    header li {
+        padding: 15px 2px;
+    }
+    #accueil .head {
+        width: 50%;
+        justify-content: space-around;
+    }
+    #description .block-li {
+        width: 85%;
+    }
+    .hide {
+        font-size: 0.8em;
+    }
+    .eyes {
+        width: 21px;
+        height: 21px;
+        top: -12px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    #accueil .head {
+        justify-content: center;
+    }
+    .hide {
+        font-size: 1em;
+    }
+    .eyes {
+        width: 24px;
+        height: 24px;
+    }
+    form {
+        width: 60%;
+    }
+}

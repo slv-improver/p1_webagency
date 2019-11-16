@@ -1,0 +1,163 @@
+body {
+    font-size: 0.9em;
+}
+section {
+    padding: 75px 0 25px 0;
+}
+header {
+    padding: 0 10%;
+}
+header li {
+    padding: 25px 8px;
+}
+header img {
+    height: 45px;
+}
+#accueil .head {
+    left: 10%;
+    margin: 0;
+    padding: 0;
+    width: 520px;
+    text-align: left;
+    align-items: flex-start;
+}
+#accueil .head p {
+    padding: 0;
+}
+#accueil h1 {
+    padding: 0;
+}
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.head p {
+    margin: 10px 0;
+}
+#services {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+#description {
+    justify-content: space-around;
+}
+#description img {
+    width: 450px;
+    max-width: inherit;
+}
+#description ul {
+    align-items: flex-start;
+    width: 50%;
+}
+#description li {
+    margin: 15px 0;
+}
+#portfolio {
+    padding-right: 80px;
+    padding-left: 80px;
+}
+#portfolio nav {
+    margin: 25px 0 35px 0;
+}
+#portfolio figure {
+    width: 23%;
+}
+.hide {
+    opacity: 0;
+    font-size: 0.9em;
+    text-align: left;
+    height: 40%;
+}
+figure:nth-child(4) .hide {
+    opacity: 1;
+}
+.hide h2, .hide p {
+    padding: 1px 5px;
+}
+figure:hover .hide {
+    transition: ease 1s;
+    opacity: 1;
+}
+iframe {
+    height: 650px;
+}
+#form {
+    right: 10%;
+    top: 150px;
+    padding: 20px;
+    align-items: flex-start;
+}
+#form .head {
+    align-items: flex-start;
+}
+#form h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+}
+form {
+    width: 100%;
+}
+form p {
+    margin: 10px 0 0 0;
+    padding: 0;
+    text-align: left;
+}
+input, textarea {
+    padding: 10px;
+    width: 90%;
+}
+
+.arrow {
+    height: 50px;
+    width: 25px;
+}
+.arrow:first-child {
+    border-radius: 0 25px 25px 0;
+}
+.arrow:last-child {
+    border-radius: 25px 0 0 25px;
+}
+.arrow .fa {
+    font-size: 25px;
+}
+.fa-angle-left {
+    position: relative;
+    right: 2px;
+}
+.fa-angle-right {
+    position: relative;
+    left: 2px;
+}
+.line hr{
+    width: 150px;
+}
+.line .circle {
+    width: 12px;
+    height: 12px;
+}
+.list-ico {
+    width: 45px;
+    height: 45px;
+}
+.list-ico .fa {
+    font-size: 20px;
+}
+.list-ico:hover .fa {
+    transition: ease 1s;
+    transform: scale(2);
+}
+.list-ico .circle {
+    right: -6px;
+    width: 9px;
+    height: 9px;
+}
+.fa-caret-down {
+    font-size: 20px;
+    bottom: -14px;
+}
+
+@media screen and (min-width: 1200px) {
+    .hide {
+        height: 30%;
+    }
+}

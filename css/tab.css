@@ -1,0 +1,63 @@
+body {
+    font-size: 0.9em;
+}
+.head {
+    margin: 10px;
+}
+button {
+    padding: 8px;
+}
+#description {
+    flex-direction: row;
+}
+#description img {
+    width: 45%;
+}
+#description li {
+    margin: 5px;
+}
+#portfolio figure {
+    width: 30%;
+}
+iframe {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 500px;
+}
+#map-overlay {
+    top: 0;
+    height: inherit;
+}
+#form {
+    position: absolute;
+    right: 50px;
+    top: 80px;
+    background: rgba(255, 255, 255, 0.7);
+    width: 300px;
+    padding: 20px 0;
+}
+form {
+    width: 90%;
+}
+
+.list-ico {
+    height: 40px;
+    width: 40px;
+}
+.arrow {
+    height: 40px;
+    width: 20px;
+}
+.arrow:first-child {
+    border-radius: 0 20px 20px 0;
+}
+.arrow:last-child {
+    border-radius: 20px 0 0 20px;
+}
+.eyes {
+    width: 30px;
+    height: 30px;
+    top: -14px;
+}
